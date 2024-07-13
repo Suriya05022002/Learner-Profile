@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="images/pic-3.png" alt="Profile Picture">
+            </div>
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="Mycourse.html">My Courses</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+                <li><a href="Change Password.html">Change Password</a></li>
+                <li><a href="Logout.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Student Profile</h1>
+            <form action="studentProfile.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text" id="student-id" name="student-id" value="173" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="doc@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="Dr Strange">
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation" value="Web Developer">
+                </div>
+                <div class="form-group">
+                    <label for="profile-pic">Upload Image</label>
+                    <input type="file" id="profile-pic" name="profile-pic">
+                </div>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
